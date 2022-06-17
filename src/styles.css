@@ -9,14 +9,21 @@ html{
     
 }
 
-main {
-    margin: 20px;
+main { 
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
 }
 
-.main--hero {
+main .main--hero {
+    position: relative;
     width: 100%;
+    max-width: 500px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
+    border-bottom: 1px solid #333;
 }
 
 .main--hero .hero-image img{
@@ -24,11 +31,11 @@ main {
     object-fit: contain;
 }
 
-.main--hero .hero-image {
+.hero-image {
     position: absolute ;
     z-index: 1;
     max-width: 260px;
-    right: 20px;
+    right: 20px;    
 }
 
 .main--hero_info {
